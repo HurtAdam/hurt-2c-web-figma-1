@@ -1,0 +1,20 @@
+@import "_homepage";
+@import "_contact";
+@import "_pract-info";
+@import "_sideBar";
+@import "_lists";
+
+$color-black: #000;
+$color-white: #fff;
+$color-red: red;
+
+$text-default: 1.1rem;
+
+$breakpoints: (
+  small: 480px,
+  medium: 768px,
+  large: 1200px //min-width,
+);
+
+$font-family-roboto: 'Roboto';
+$font-family-awesome: "Font Awesome 5 Free";

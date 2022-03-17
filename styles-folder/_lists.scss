@@ -1,0 +1,142 @@
+@mixin list-icon($top) {
+  position: absolute;
+  width: 50px;
+  height: 49.82px;
+  top: $top;
+}
+@mixin list-text($top) {
+  position: absolute;
+  width: 220px;
+  height: 14px;
+  left: 30%;
+  top: $top;
+}
+
+
+@mixin grid-icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+@mixin grid-text {
+  position: absolute;
+  left: 30%;
+  top: 1rem;
+}
+
+.all-item {
+  position: relative;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.item-lists {
+  .text-font h3 {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  @media screen and(min-width:996px) {
+    .third-item {
+      position: relative;
+      top: 317px;
+    }
+    .grid-second-row {
+      position: absolute;
+      top: 568px;
+    }
+  }
+ 
+  .corona-picture {
+    
+    @include grid-icon();
+  }
+  .corona-text {
+    
+    @include grid-text();
+  }
+  
+  .luggage-picture {
+    // @include list-icon(233px);
+    // background: url(/pictures/luggage.svg);
+
+    @include grid-icon();
+  }
+  .luggage-text {
+    
+    @include grid-text();
+  }
+  
+  .sales-picture {
+    // @include list-icon(317px);
+
+    @include grid-icon();
+    
+  }
+  .sales-text {
+    
+    @include grid-text();
+  }
+  
+  .document-picture {
+    @include list-icon(401px);
+    background: url(/pictures/doc1.svg);
+  }
+  .document-text {
+    @include list-text(419px);
+  }
+  
+  .document-picture-1 {
+    @include list-icon(485px);
+    background: url(/pictures/doc1.svg);
+  }
+  .document-text-1 {
+    @include list-text(503px);
+  }
+  
+  .document-picture-2 {
+    @include list-icon(569px);
+    background: url(/pictures/doc1.svg);
+  }
+  .document-text-2 {
+    @include list-text(587px);
+  }
+}
+
+
+
+.footer-edit {
+  position: absolute;
+  width: 100%;
+  height: 88px;
+  left: 0;
+  bottom: 0;
+  background: #cbc1b1;
+
+  .footer-80 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+      font-family: Lato;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 160%;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-align: center;
+      color: #000000;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.container-align {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  top: 149px;
+}
+.contact-container {
+  position: relative;
+  width: 80%;
+  .contact-headline {
+    display: flex;
+    justify-content: center;
+  }
+  .contact-headline h2 {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #000000;
+  }
+}

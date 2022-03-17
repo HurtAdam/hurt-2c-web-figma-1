@@ -1,0 +1,51 @@
+
+
+#sideBar {
+  position: fixed;
+  top: 0;
+  right: -1000px;
+  width: 40vw;
+  height: 100%;
+  transition: 0.5s ease;
+  background-color: #3c4856;
+  z-index: 900;
+  opacity: 0.9;
+
+  ul {
+    position: relative;
+    margin-top: 3rem;
+    text-align: center;
+
+    li {
+      list-style: none;
+      display: inline-block;
+      width: 100%;
+      padding-top: 1rem;
+
+      &:hover {
+        background-color: #03a9f4;
+      }
+      & a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+      }
+    }
+  }
+  &.aktivni {
+    right: 0;
+  }
+}
+
+
+
+
+/* BREAKPOINTS 
+0px — 480px: Mobily
+481px — 768px: Tablety
+769px — 1024px: malé obrazovky, notebooky
+1025px — 1200px: velké obrazovky, PC
+1201px and more —  velmi velké obrazovky, TV
+
+*/
